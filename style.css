@@ -1,0 +1,255 @@
+
+
+a{
+    transition: color .2s linear, border .2s linear;
+    text-decoration: none;
+    border-bottom: 1px dotted ;
+    color: #49bf9d;
+    
+}
+a:hover{
+    border-bottom-color: transparent;
+}
+p{
+    margin: 0 0 2em;
+}
+.img-1{
+    width: 50%;
+    
+}
+
+
+.main-header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 30%;
+    padding: 124px 54px 72px;
+    box-sizing: border-box;
+    background-image: url(./img/atomos2.gif);
+    background-position: left top;
+    background-size: auto, cover;
+    text-align: right;
+    background-size: 100% 100%;
+    
+}
+.main-header-tittle{
+    font-size: 22px;
+    line-height: 1.8;
+    color: white;
+    font-weight: normal;
+    color: rgba(255, 255, 255, .5);
+    
+}
+.main-header-tittle strong{
+    color: white;
+    font-family: normal;
+}
+.main-header-link {
+    color: inherit;
+}
+.main-header-link:hover{
+    color: #50ebff;
+}
+
+.main-header-link img{
+    border-radius:60%;
+    overflow:hidden;
+}
+
+.main-footer{
+    position: fixed;
+    bottom: 0px;
+    width: 35%;
+    left: 0;
+    padding: 0 200px 10px 0;
+    box-sizing: border-box;
+    text-align: right;
+    font-size: 30px;
+    
+}
+
+.main-footer ul li{
+    list-style-type: none;
+    display: inline-flex;
+    padding-left: 15px;
+    font-size: 18px;
+}
+
+
+
+
+.backgroud-1{
+    
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgb(120, 233, 186), rgb(22, 22, 22));
+}
+section{
+    width: 60%;
+    margin-left: 35%;
+    box-sizing: border-box;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  section:nth-child(1){
+    color: #000000;
+    }
+  section:nth-child(2){
+    color: #42455a;
+    background: #50dfdf;
+    
+  } 
+  section:nth-child(3){
+    color: #000000;
+  }
+  section:nth-child(4){
+    color: #42455a;
+    background: #50dfdf;
+  }
+  section .container{
+    margin: 100px;
+    
+  }
+  section h1{
+    font-size: 3rem;
+    margin: 20px;
+    
+  }
+  section h2{
+    font-size: 40px;
+    
+    text-transform: uppercase;
+  }
+  section .text-container{
+     display: flex;
+     position: auto;
+  }
+  section .text-container .text-box{
+    margin: 20px;
+    padding: 20px;
+    background: #00c2cb;
+  }
+  section .text-container .text-box h3{
+    font-size: 30px;
+    
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 900px){
+    section h1{
+      font-size: 2rem;
+      
+    }
+    section .text-container{
+        
+    }
+  }
+  
+  .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+.h2{
+    color: #000000;
+}
+
+.div-2{
+    margin-top: 2px;
+    background: linear-gradient(rgb(1, 33, 34), rgb(165, 237, 250));
+}
+
+.ul-top a{
+    position: relative;
+    left: 1260px;
+    color: #000000;
+}
+
+
+
+
+
+
+#menu__toggle{
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+.menu__btn{
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+  transition-duration: .25s;
+}
+.menu__btn > span::before{
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after{
+  content: '';
+  top: 8px;
+}
+.menu__box{
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 185px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background: linear-gradient(rgb(120, 233, 186), rgb(22, 22, 22));
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  transition-duration: .25s;
+}
+.menu__item{
+  display: block;
+  padding: 40px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration:none;
+  transition-duration: .25s;
+}
+.menu__item:hover{
+  background-color: #cfd8dc;
+}

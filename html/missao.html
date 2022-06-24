@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            .wrapper {
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                float: right;
+                padding: 105px;
+                width: 70%;
+                
+                height: 390px; 
+                }
+                .typing-demo{
+                width: 50ch;
+                animation: typing 2s steps(22),
+                blink .5s step-end infinite alternate;
+                white-space: nowrap;
+                overflow: hidden;
+                border-right: 3px solid;
+                font-family: monospace;
+                font-size: 2em;
+                }
+                @keyframes typing {
+                from {
+                    width: 0
+                }
+                }
+                @keyframes blink{
+                from {
+                    width: 1
+                }
+                }
+                section a{
+                    position: relative;
+                    top: 100px;
+                }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="typing-demo">
+                Desenvolver sistemas web utilizando tecnologias<br> de ponta, garantindo a qualidade final dos projetos <br> disponibilizados. Bem como proporcionar os melhore<br>s planos de publicidade acessíveis a empresas de <br>pequeno, médio e grande porte.
+            </div>
+            <section>
+                <a href="..\index.html">
+                    <p>Volta.</p>
+                </a>
+            </section>
+        </div>
+    </body>
+</html>
